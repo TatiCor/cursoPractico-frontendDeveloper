@@ -6,10 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Password recovery</title>
+    <title>Create my account</title>
     <style>
 
-        /* CREATE NEW PASSWORD */
+        /* Create my account */
         :root {
             --white: #ffff;
             --black: #00000000;
@@ -40,32 +40,25 @@
             width: 300px;
         }
 
-        .logo{
-            width: 206.4px;
-            margin-bottom: 43px;
-            justify-self: center;
-            display: none; /* para ocultar img y que aparezca en mobile */
-        }
-
         .tittle {
             font-size: var(--lg);
-            margin-bottom: 12px;
-            text-align: center;
+            font-weight: bold;
+            margin-bottom: 36px;
+            text-align: start;
+
         }
 
-        .subtittle {
-            font-size: var(--md);
-            font-weight: 300;
-            color: var(--very-light-pink);
-            margin-top: 0;
-            margin-bottom: 32px;
-            text-align: center;
-        }
 
         .form{
             display: flex;
             flex-direction: column;
             margin-bottom: 12px;
+        }
+
+        .form div {
+            display: flex;
+            flex-direction: column;
+            
         }
 
         label {
@@ -82,6 +75,7 @@
             padding: 8px;
             margin-bottom: 12px;
             background-color: var(--text-input-field);
+            outline: none;
             
         }
 
@@ -95,16 +89,33 @@
             border-radius: 8px;
             border: none;
             cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
-        .login-button {
-        margin-top: 14px;
-        margin-bottom: 30px;
+        .input-name,
+        .input-mail,
+        .input-password {
+            margin-bottom: 22px;
+        }
+
+        .create-button {
+            margin-top: 14px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+             
         }
 
         @media (max-width: 640px){
-            .logo {
-                display: block;
+            .form-container {
+                height: 100%;
+            }
+
+            .form{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                margin-bottom: 12px;
             }
         }
     </style>
@@ -113,21 +124,24 @@
 <body>
     <div class="login">
         <div class="form-container">
-            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
-
-            <h1 class="tittle">Create a new paassword</h1>
-            <p class="subtittle">Enter a new password for you account</p>
+            
+            <h1 class="tittle">My account</h1>
 
             <form action="/" class="form">
-                <label for="password" class="password">Password</label>
+                <div>
+                    <label for="name" class="name">Name</label>
+                    <input type="text" id= "name" placeholder="Yoko Ono" class="input input-name">
+                
+
+                    <label for="mail" class="mail">Email address</label>
+                    <input type="email" id= "new-mail" placeholder="example@yardsale.com" class="input input-mail">
+                
+                    <label for="password" class="password">Password</label>
                     <input type="password" id= "password" placeholder="**********" class="input input-password">
+                </div>              
                 
 
-                <label for="new-password" class="new-password">Password</label>
-                    <input type="password" id= "new-password" placeholder="**********" class="input input-password">
-                
-
-                <input type="submit" value="Confirm" class="primary-button login-button">
+                <input type="submit" value="Create" class="primary-button create-button">
             </form>
         </div>
     </div>
