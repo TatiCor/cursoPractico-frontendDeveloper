@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Nav bar</title>
+
+    <style>       
+        nav {
+            display: flex;
+        }
+
+        nav .menu {
+            display: none;
+        }
+
+        nav .logo {
+            width: 100px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            background-color: red;
+            margin: 10px;
+        }
+
+        .rigth-bar {
+            display: flex;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+        <img src="./logos/logo_yard_sale.svg" alt="logo_yard_sale" class="logo">
+
+        <div class="left-bar">
+            <ul>
+                <li>
+                    <a href="">All</a>
+                </li>
+                <li>
+                    <a href="">Clothes</a>
+                </li>
+                <li>
+                    <a href="">Electronics</a>
+                </li>
+                <li>
+                    <a href="">Furnitures</a>
+                </li>
+                <li>
+                    <a href="">Toys</a>
+                </li>
+                <li>
+                    <a href="">Others</a>
+                </li>
+            </ul>     
+            
+        </div>
+
+        <div class="rigth-bar">
+            <ul>
+                <li>Sign in</li>
+            </ul>
+
+            <img src="./icons/icon_shopping.svg" alt="shopping cart">
+
+        </div>
+    </nav>
+    
+</body>
+
+</html>
