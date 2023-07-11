@@ -1,0 +1,174 @@
+:root {
+    --white: #ffff;
+    --black: #000000f3;
+    --very-light-pink:#C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --dark:#232830;
+    --sm: 14px;
+    --md:16px;
+    --lg: 18px;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;           
+    font-family:'Quicksand', sans-serif;
+}
+
+.inactive {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 24px;
+    border: 1px solid var(--very-light-pink);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+nav .menu {
+    display: none;
+}
+
+nav .logo {
+    width: 144px;
+    height: 33px;
+    margin-left: 12px;
+    align-self: center;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+.rigth-bar {
+    display: flex;
+}
+
+.left-bar {
+    display: flex;
+    margin-left: 12px;
+    
+}
+
+.left-bar ul {
+    margin-left: 24px;
+}
+
+.rigth-bar ul li a,
+.left-bar ul li a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    font-size: var(--md);
+    font-weight: bold;
+    
+}
+
+.rigth-bar .navbar-email {
+    color: var(--dark);
+    font-size: var(--sm);
+    font-weight: 300;
+}
+
+.left-bar ul li a:hover{
+    border: 1px solid var(--hospital-green);
+    border-radius: 8px ;
+    color: var(--hospital-green);
+    padding: 8px;
+}
+
+/* menubar */
+
+.desktop-menu {
+    position: absolute;
+    top: 61px;
+    right: 85px;
+    background: var(--white);
+    width: 140px;
+    height: 200px;
+    padding: 20px 20px 20px;
+    border-radius: 6px;
+    border: 1px solid var(--very-light-pink);
+    
+
+}
+
+.desktop-menu ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+            
+}
+
+.desktop-menu ul li {
+    text-align: end;
+    
+              
+}
+
+.desktop-menu ul li:nth-child(1),
+.desktop-menu ul li:nth-child(2) {
+    font-weight: bold;
+}
+
+
+.desktop-menu ul li a{
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--dark);
+    text-decoration: none;
+    
+}
+
+.desktop-menu ul li:last-child{
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+    
+}
+
+.desktop-menu ul li:last-child a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+
+
+@media(max-width: 640px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav .menu {
+        display: block;
+        height: 22px;
+        align-self: center;
+    }
+
+    .left-bar ul {
+        display: none;
+    }
+
+
+    .rigth-bar .navbar-email {
+        display: none;
+    }
+}
