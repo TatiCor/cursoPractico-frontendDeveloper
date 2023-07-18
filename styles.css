@@ -340,7 +340,7 @@
 }
 
 .product-info{
-  display: grid; /* tenía display flex y me rompía el product detail que tiene esta clase */
+  display: flex; 
   justify-content: space-between;
   align-items: center;
   margin-top: 12px;
@@ -416,8 +416,11 @@
 }
 
 .product-info-detail{
+  display: grid;
   padding: 8px;
-  height: 100vh;
+  height: 100%;
+  align-items: center;
+  margin-top: 12px;
 }
 
 .product-card .product-info p:first-child {
