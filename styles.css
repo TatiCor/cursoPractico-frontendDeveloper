@@ -410,7 +410,7 @@
   object-fit: cover;
 }
 
-.product-card .product-info {
+.product-card .product-info-detail {
   margin: 24px 24px 0 24px;
 
 }
@@ -423,20 +423,20 @@
   margin-top: 12px;
 }
 
-.product-card .product-info p:first-child {
+.product-info-detail p:first-child {
   font-size: var(--md);
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 4px;
 }
-.product-card .product-info p:nth-child(2) {
+.product-info-detail p:nth-child(2) {
   font-size: var(--md);
   color: var(--very-light-pink);
   margin-top: 0;
   margin-bottom: 36px;
 }
 
-.product-card .product-info p:nth-child(3) {
+.product-info-detail p:nth-child(3) {
   font-size: var(--md);
   color: var(--very-light-pink);
   margin-top: 0;
