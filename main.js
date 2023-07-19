@@ -36,7 +36,7 @@ function toggleMobileMenu(){
     }
 
     mobileMenu.classList.toggle('inactive');
-    
+
     closeProductDetailAside();
 }
 
@@ -82,7 +82,28 @@ let productList = [];
 productList.push({
     name: 'Bike',
     price: 120,
-    image: './bike.jpeg'
+    image: 'https://images.pexels.com/photos/2256137/pexels-photo-2256137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+})
+productList.push({
+    name: 'Laptop',
+    price: 300,
+    image: 'https://media.gq.com.mx/photos/61e70ca25def32c5619cef06/4:3/w_712,h_534,c_limit/Lenovo%20Yoga%20Slim%207%20Pro.jpg'
+})
+productList.push({
+    name: 'Airpods',
+    price: 200,
+    image: 'https://i.blogs.es/85cc93/auriculares-airpods-1-/1366_2000.jpg'
+})
+productList.push({
+    name: 'turntable',
+    price: 299,
+    image: 'https://images.pexels.com/photos/775414/pexels-photo-775414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+})
+
+productList.push({
+    name: 'Buda',
+    price: 100,
+    image: 'https://images.pexels.com/photos/7373005/pexels-photo-7373005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 })
 productList.push({
     name: 'Laptop',
@@ -99,6 +120,32 @@ productList.push({
     price: 160,
     image: 'https://www.infinitonline.com.ar/images/000000000000011900733TGA108.jpg'
 })
+
+productList.push({
+    name: 'turntable',
+    price: 299,
+    image: 'https://images.pexels.com/photos/775414/pexels-photo-775414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+})
+
+productList.push({
+    name: 'Bike',
+    price: 150,
+    image: 'bike.jpeg'
+})
+
+productList.push({
+    name: 'Keyboard',
+    price: 160,
+    image: 'https://www.infinitonline.com.ar/images/000000000000011900733TGA108.jpg'
+})
+productList.push({
+    name: 'Buda',
+    price: 100,
+    image: 'https://images.pexels.com/photos/7373005/pexels-photo-7373005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+})
+
+
+
 
 
 function renderProducts(array) {
